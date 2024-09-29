@@ -1,3 +1,4 @@
+# for Plagarism detection for two document
 import heapq
 import re
 from typing import List, Tuple
@@ -114,13 +115,12 @@ def analyze_results(detected_cases:List[Tuple[str,str,float,int]],total_distance
         expected_output ="The overlapping content aligns with a low edit distance, indicating potential plagiarism."
 
     print(f"\nAnalysis Type:{doc_type}")
-    print(f"Expected Output:{expected_output}")
+    print(f" Output:{expected_output}")
 
     print(f"\nTotal Edit Distance:{total_distance}")
     print(f"Average Edit Distance per Sentence:{avg_distance:.2f}")
 
 def main():
-    print("Plagiarism Detection System")
     path1 =input("Enter the path of the first .txt file: ")
     path2=input("Enter the path of the second .txt file: ")
 
